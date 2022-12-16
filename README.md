@@ -1,8 +1,8 @@
-# ICS-11-Culminating-Project
+# Focusfy
 
 ### Alex Zhu, Raymond Ouyang, Sean Zhao
 
-
+##### Short Description
 Our plan is to create a web-based program that helps teachers and students with productivity. This program includes:
 * a customizable schedule
 * a to-do list
