@@ -1,1 +1,8 @@
 # ICS-11-Culminating-Project
+
+Alex Zhu, Raymond Ouyang, Sean Zhao
+
+
+Our plan is to create a web-based program that helps teachers and students with productivity. This program includes a customizable schedule, a to-do list, and digital flashcards.
+
+We plan on using Intellij and Eclipse for Java, and Webstorm for Javascript, HTML and CSS. We also plan on using GitHub to share our code and make it easy to work remotely
