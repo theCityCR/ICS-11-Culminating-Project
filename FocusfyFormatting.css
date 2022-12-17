@@ -26,6 +26,10 @@
     background-color: #ccc;
 }
 
+table, th, td {
+    border:1px solid black;
+}
+
 /* Style the tab content */
 .tabcontent {
     display: none;
