@@ -10,7 +10,7 @@
 <body>
 <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Home')"  >Home</button>
     <button class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button>
     <button class="tablinks" onclick="openTab(event, 'To-do List')">To-do List</button>
     <button class="tablinks" onclick="openTab(event, 'Focus Timer')">Focus Timer</button>
@@ -18,13 +18,22 @@
 
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
+    <h1>Focusfy</h1>
+    <p id="date">Hi</p>
+    <p>Welcome to focusfy</p>
+    <p>Explaination of the home page</p>
 </div>
 
 <div id="Schedule" class="tabcontent">
     <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <table>
+        <tr>
+            <td> ICS3UP</td>
+            <td> 9:00-10:20</td>
+            <td> Room 2222</td>
+            <td> T. Gugoiu</td>
+        </tr>
+    <p>Time table</p>
 </div>
 
 <div id="To-do List" class="tabcontent">

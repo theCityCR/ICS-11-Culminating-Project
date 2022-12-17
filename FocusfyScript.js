@@ -2,8 +2,6 @@
  * @author Raymond, Sean, Alex
  */
 
-document.getElementById("defaultOpen").click();
-
 function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -17,3 +15,9 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultOpen").click();
+
+const d = new Date().toLocaleString();
+document.getElementById("date").value = d;
+console.log(d);
