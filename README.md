@@ -20,8 +20,8 @@ The final feature that we plan to add is to add a focus timer. This timer will s
 
 ### Schedule:
   * Students and teachers can input their schedules
-  * Remind users n minutes before their event
-  * Keep track of special days such as holidays, special events
+  * Remind users before their event
+  * Keeps track of special days such as holidays, special events
 
 ### To-do List:
   * Users add tasks to their list
