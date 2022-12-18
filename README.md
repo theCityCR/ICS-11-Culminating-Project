@@ -33,3 +33,10 @@ The final feature that we plan to add is to add a focus timer. This timer will s
   - Sets a timer for you to focus
   - Once the time is up a break timer will start
   - After the break timer ends goes back to productivity timer
+
+
+### Timeline:
+  - Dec 23 - 30: Basic HTML structure
+  - Dec 30 - Jan 6: Add logic and methods
+  - Jan 6 - 13: Add CSS
+  - jan 13 - 20: Polishing
