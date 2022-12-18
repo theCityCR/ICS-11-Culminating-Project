@@ -9,7 +9,7 @@ Our plan is to create a web-based program that helps teachers and students with 
 * Focus timer
 
 #### Technology
-We plan on using Intellij and Eclipse for Java, and Webstorm for Javascript, HTML and CSS. We also plan on using GitHub to share our code and make it easy to work remotely
+We plan on using Webstorm for Javascript, HTML and CSS. We also plan on using GitHub to share our code and make it easy to work remotely.
 
 #### Detailed Plan
 There are many things this program can do. This program has a scheduling and general productivity app. This app will have three features. The first is a scheduling feature. This schedule can help students and teachers keep track of their school and personal schedules, as well as remind users when the event is almost happening. 
