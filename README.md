@@ -9,7 +9,7 @@ Our plan is to create a web-based program that helps teachers and students with 
 * Focus timer
 
 ### Technology
-We plan on using Webstorm for Javascript, HTML and CSS. We also plan on using GitHub to share our code and make it easy to work remotely.
+We plan on using Webstorm for Javascript, HTML and CSS. We also plan on using GitHub to share our code and make it easy to work remotely. Our project is compatible with any browser that supports HTML, Javascript and CSS.
 
 ### Detailed Plan
 There are many things this program can do. This program has a scheduling and general productivity app. This app will have three features. The first is a scheduling feature. This schedule can help students and teachers keep track of their school and personal schedules, as well as remind users when the event is almost happening. 
@@ -20,8 +20,8 @@ The final feature that we plan to add is to add a focus timer. This timer will s
 
 ### Schedule:
   * Students and teachers can input their schedules
-  * Remind users before their event
-  * Keeps track of special days such as holidays, special events
+  * Remind users n minutes before their event
+  * Keep track of special days such as holidays, special events
 
 ### To-do List:
   * Users add tasks to their list
