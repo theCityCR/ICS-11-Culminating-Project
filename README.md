@@ -34,8 +34,3 @@ The final feature that we plan to add is to add a focus timer. This timer will s
   - Sets a timer for you to focus
   - Once the time is up a break timer will start
   - After the break timer ends goes back to productivity timer
-
-### Flashcards/Study Help: to add later
-  - Flashcards to help study
-
-### Note Taking App: to add later
