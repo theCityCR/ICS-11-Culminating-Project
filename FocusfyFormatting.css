@@ -63,3 +63,7 @@ table, th, td {
     border: 1px solid #ccc;
     border-top: none;
 }
+
+#Home {
+    display : block;
+}
