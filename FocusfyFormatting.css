@@ -13,11 +13,9 @@
 
 }
 
-checklist li:hover {
+.checklist li:hover {
     background: #ddd;
 }
-
-
 
 /* Style the tab */
 .tab {
