@@ -8,11 +8,9 @@
 
 </head>
 <body>
-
-<h1 style="text-align: center;">Focusfy</h1>
 <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'Home')"  >Home</button>
+    <button class="tablinksHome" id="defaultOpen" onclick="openTab(event, 'Home')"  >Focsufy</button>
     <button class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button>
     <button class="tablinks" onclick="openTab(event, 'To-do List')">To-do List</button>
     <button class="tablinks" onclick="openTab(event, 'Focus Timer')">Focus Timer</button>
@@ -30,11 +28,11 @@
     <h3>Time Table</h3>
     <table class="ScheduleTable">
         <tr id="ScheduleTitle">
-                <td> Period </td>
-                <td> Time </td>
-                <td> Course Code </td>
-                <td> Room </td>
-                <td> Teacher </td>
+            <td> Period </td>
+            <td> Time </td>
+            <td> Course Code </td>
+            <td> Room </td>
+            <td> Teacher </td>
         </tr>
         <tr>
             <td id="Period 1">
@@ -75,6 +73,10 @@
 <div id="Focus Timer" class="tabcontent">
     <h3>Tokyo</h3>
     <p>Tokyo is the capital of Japan.</p>
+    <div class="timer">
+        <p id="timeleft">30:00</p>
+        <button class="startButton">Start Timer</button>
+    </div>
 </div>
 
 
