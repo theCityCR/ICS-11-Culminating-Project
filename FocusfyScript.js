@@ -18,7 +18,6 @@ function openTab(evt, cityName) {
 
 function addSchedule(event) {
     const schedule = event.target.files[0];
-    
 }
 
 document.getElementById("defaultOpen").click();
