@@ -16,8 +16,15 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+function addSchedule(event) {
+    const schedule = event.target.files[0];
+    
+}
+
 document.getElementById("defaultOpen").click();
 
 const d = new Date().toLocaleString();
 document.getElementById("date").value = d;
 console.log(d);
+
+document.getElementById("scheduleUpload").addEventListener("change", addSchedule);
