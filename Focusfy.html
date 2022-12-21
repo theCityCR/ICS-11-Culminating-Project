@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Focusfy</title>
-    <script src="FocusfyScript.js"></script>
+
     <link rel="stylesheet" href="FocusfyFormatting.css">
 
 </head>
 <body>
 <!-- Tab links -->
 <div class="tab">
-    <button class="tablinksHome" id="defaultOpen" onclick="openTab(event, 'Home')"  >Focsufy</button>
+    <button class="tablinksHome" id="defaultOpen" onclick="openTab(event, 'Home')"  >Focusfy</button>
     <button class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button>
     <button class="tablinks" onclick="openTab(event, 'To-do List')">To-do List</button>
     <button class="tablinks" onclick="openTab(event, 'Focus Timer')">Focus Timer</button>
@@ -75,11 +75,14 @@
     <p>Tokyo is the capital of Japan.</p>
     <div class="timer">
         <p id="timeleft">30:00</p>
-        <button class="startButton">Start Timer</button>
+        <div class="a">
+            <button class="startButton" onclick="startTimer(time);">Start Timer</button>
+        </div>
+
     </div>
 </div>
 
 
-
+<script src="FocusfyScript.js"></script>
 </body>
 </html>

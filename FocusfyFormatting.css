@@ -129,6 +129,14 @@
     left: 50%;
     transform: translate(-50%);
     cursor: pointer;
-    padding-bottom: 20%;
 
+
+}
+
+.startButton:hover {
+    background-color: #aaa;
+}
+
+.a {
+    padding-bottom: 10%;
 }
