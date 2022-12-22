@@ -91,6 +91,7 @@
     border-spacing: 5px;
     border:1px solid black;
     width: 20%;
+    text-align: center;
 }
 
 .ScheduleTable {
@@ -129,14 +130,5 @@
     left: 50%;
     transform: translate(-50%);
     cursor: pointer;
-
-
-}
-
-.startButton:hover {
-    background-color: #aaa;
-}
-
-.a {
-    padding-bottom: 10%;
+    padding-bottom: 20%;
 }

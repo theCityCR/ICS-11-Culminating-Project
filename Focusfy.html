@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Focusfy</title>
 
-    <link rel="stylesheet" href="FocusfyFormatting.css">
-
 </head>
 <body>
 <!-- Tab links -->
@@ -21,7 +19,7 @@
     <h1>Focusfy</h1>
     <p id="date">Put date here</p>
     <p>Welcome to focusfy</p>
-    <p>Explaination of the home page</p>
+    <p>Explanation of the home page</p>
 </div>
 
 <div id="Schedule" class="tabcontent">
@@ -34,26 +32,10 @@
             <td> Room </td>
             <td> Teacher </td>
         </tr>
-        <tr>
-            <td id="Period 1">
-                ICS3UP<br>9:00-10:20<br>Room 222<br>T. Gugoiu
-            </td>
-        </tr>
-        <tr>
-            <td id="Period 2">
-                ICS3UP<br>9:00-10:20<br>Room 222<br>T. Gugoiu
-            </td>
-        </tr>
-        <tr>
-            <td id="Period 3">
-                ICS3UP<br>9:00-10:20<br>Room 222<br>T. Gugoiu
-            </td>
-        </tr>
-        <tr>
-            <td id="Period 4">
-                ICS3UP<br>9:00-10:20<br>Room 222<br>T. Gugoiu
-            </td>
-        </tr>
+        <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4</td><td></td><td></td><td></td><td></td></tr>
     </table>
     <p>Time table</p>
 </div>
@@ -75,14 +57,18 @@
     <p>Tokyo is the capital of Japan.</p>
     <div class="timer">
         <p id="timeleft">30:00</p>
-        <div class="a">
-            <button class="startButton" onclick="startTimer(time);">Start Timer</button>
-        </div>
-
+        <button class="startButton">Start Timer</button>
     </div>
 </div>
 
+<script type="text/javascript" src="FocusfyScript.js"></script>
+<link rel="stylesheet" href="FocusfyFormatting.css">
+<script type="text/javascript" src="ScheduleScript.js"></script>
+<link rel="stylesheet" href="ScheduleFormatting.css">
+<script type="text/javascript" src="ToDoListScript.js"></script>
+<link rel="stylesheet" href="ToDoListFormatting.css">
+<script type="text/javascript" src="TimerScript.js"></script>
+<link rel="stylesheet" href="TimerFormatting.css">
 
-<script src="FocusfyScript.js"></script>
 </body>
 </html>
