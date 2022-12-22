@@ -5,10 +5,16 @@ document.getElementById("timeleft").innerHTML=hhmmss(time);
 
 function hhmmss(miliseconds)
 {
-    let hours=Math.floor(miliseconds/3600000);
-    let minutes=Math.floor((miliseconds-hours*3600000)/60000);
-    let seconds=Math.floor((miliseconds-hours*3600000-minutes*60000)/1000);
+    let hours=""+Math.floor(miliseconds/3600000);
+    let minutes=""+Math.floor((miliseconds-hours*3600000)/60000);
+    let seconds=""+Math.floor((miliseconds-hours*3600000-minutes*60000)/1000);
 
+    if (seconds.length==1)
+    {
+        seconds="0"+seconds;
+    }
+
+    console.log(hours);
     if (hours==="0")
     {
         return (""+minutes+":"+seconds);
@@ -28,10 +34,17 @@ function startTimer()
 {
     timerStart=!timerStart;
     if (timerStart) {
-        setInterval(function(){
+        let timerRepeatId=setInterval(function(){
             time = time - 1000;
             document.getElementById("timeleft").innerHTML=hhmmss(time);
             console.log(hhmmss(time));
+            document.getElementById("startButton").innerHTML="Start timer";
+            if (!timerStart)
+            {
+                document.getElementById("startButton").innerHTML="Stop timer";
+                clearInterval(timerRepeatId);
+
+            }
         }, 1000);
     }
 }
