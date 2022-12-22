@@ -1,0 +1,15 @@
+.ScheduleTable td, .ScheduleTable {
+    padding: 5px;
+    border-spacing: 5px;
+    border:1px solid black;
+    width: 20%;
+    text-align: center;
+}
+
+.ScheduleTable {
+    width: 100%;
+}
+
+#ScheduleTitle{
+    font-weight: bold;
+}

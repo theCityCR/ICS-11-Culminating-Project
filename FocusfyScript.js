@@ -17,7 +17,3 @@ function openTab(evt, cityName) {
 }
 
 document.getElementById("defaultOpen").click();
-
-const d = new Date().toLocaleString();
-document.getElementById("date").value = d;
-console.log(d);
