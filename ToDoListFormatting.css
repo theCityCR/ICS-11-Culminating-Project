@@ -1,0 +1,20 @@
+
+/*the list of items to do*/
+.checklist {
+    overflow: auto;
+    border: 1px solid deepskyblue;
+    background-color: aquamarine;
+    padding: 12px 5px 12px 5px;
+}
+/*each list item of checklist*/
+.checklist li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.3s;
+
+}
+/*when you hover over an item*/
+.checklist li:hover {
+    background: #ddd;
+}

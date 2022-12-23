@@ -1,0 +1,141 @@
+.checklist {
+    overflow: auto;
+    border: 1px solid deepskyblue;
+    background-color: aquamarine;
+    padding: 12px 5px 12px 5px;
+}
+
+.checklist li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.3s;
+
+}
+
+.checklist li:hover {
+    background: #ddd;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: gray;
+    width: 100%;
+    display:table;
+    height: 60px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks{
+    display:table-cell;
+    background-color: inherit;
+    float: left;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px 14px 16px;
+    transition: 0.3s;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+    background-color: #ccc;
+}
+
+.tablinksHome{
+    display:table-cell;
+    background-color: inherit;
+    float: left;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px 14px 16px;
+    transition: 0.3s;
+    text-align: left;
+    height: 100%;
+    width: 70%;
+    font-size: 1.3em;
+    overflow: hidden;
+}
+
+/* Change background color of buttons on hover */
+.tablinksHome:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tablinksHome.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.ScheduleTable td, .ScheduleTable {
+    padding: 5px;
+    border-spacing: 5px;
+    border:1px solid black;
+    width: 20%;
+}
+
+.ScheduleTable {
+    width: 100%;
+}
+
+#ScheduleTitle{
+    font-weight: bold;
+}
+
+#Home {
+    display : block;
+}
+
+.timer {
+    border-radius: 30px;
+    border: 2px solid black;
+    fill: darkgrey;
+    margin: auto;
+    width: 50%;
+    padding-top: 0.2%;
+}
+
+#timeleft {
+    font-size: 5em;
+    text-align: center;
+}
+
+.startButton {
+    position: relative;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    fill: darkgrey;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.startButton:hover {
+    background-color: #aaa;
+}
+
+.a {
+    padding-bottom: 10%;
+}
+
