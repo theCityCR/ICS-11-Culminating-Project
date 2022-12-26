@@ -6,5 +6,5 @@ Adds the schedule
  */
 function addSchedule(event) {
     const schedule = event.target.files[0];
-    console.log(schedule);
+
 }

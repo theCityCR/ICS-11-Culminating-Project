@@ -1,3 +1,4 @@
+/*div holding the timer*/
 .timer {
     border-radius: 30px;
     border: 2px solid black;
@@ -6,12 +7,12 @@
     width: 50%;
     padding-top: 0.2%;
 }
-
+/*the timer*/
 #timeleft {
     font-size: 5em;
     text-align: center;
 }
-
+/*button to start and stop the timer*/
 .startButton {
     position: relative;
     font-size: 1.5em;
@@ -25,11 +26,17 @@
 
 
 }
-
+/*hovering the start button*/
 .startButton:hover {
     background-color: #aaa;
 }
 
+/*after clicking the start button*/
+.startButton.active {
+    background-color: #cccccc;
+}
+
+/*padding for the button*/
 .buttonDiv {
     padding-bottom: 10%;
 }
