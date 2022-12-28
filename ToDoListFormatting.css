@@ -1,13 +1,21 @@
+.checklistOutline {
+    border-radius: 30px;
+    fill: darkgrey;
+    margin: auto;
+    width: 80%;
+    padding-top: 0.2%;
+    background-color: #ff999e;
+}
 
 /*the list of items to do*/
-.checklist {
+#checklist {
     overflow: auto;
     border: 1px solid deepskyblue;
     background-color: aquamarine;
     padding: 12px 5px 12px 5px;
 }
 /*each list item of checklist*/
-.checklist li {
+#checklist li {
     list-style-type: none;
     cursor: pointer;
     padding: 6px;
@@ -15,6 +23,12 @@
 
 }
 /*when you hover over an item*/
-.checklist li:hover {
+#checklist li:hover {
     background: #ddd;
+}
+
+#taskAdder{
+    width: 70%;
+    margin: auto;
+    display:inline;
 }

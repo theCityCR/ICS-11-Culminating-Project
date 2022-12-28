@@ -1,7 +1,13 @@
-/*
+tasks=document.getElementsByClassName("task");
 
-Adding tasks function
+function addTask(){
+    newTask = document.createElement("li"); //New task element in the list
+    taskValue = document.createTextNode(document.getElementById("taskAdder").value);//take the taskvalue from the input
+    newTask.appendChild(taskValue); //add the task value as the value for the new task
 
-Removing tasks function
+    document.getElementById("taskAdder").value = "";//clear the input
 
- */
+    const currentDiv = document.getElementById("checklist");
+    currentDiv.append(newTask);
+
+}
