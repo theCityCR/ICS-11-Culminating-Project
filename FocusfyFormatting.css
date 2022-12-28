@@ -2,7 +2,7 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
-    background-color: gray;
+    background-color: #ff5962;
     width: 100%;
     display:table;
     height: 60px;
@@ -13,7 +13,7 @@
     display:table-cell;
     background-color: inherit;
     float: left;
-    border: 1px solid black;
+    border: 1px solid white;
     outline: none;
     cursor: pointer;
     padding: 14px 16px 14px 16px;
@@ -22,23 +22,24 @@
     width: 10%;
     height: 100%;
     overflow: hidden;
+    color: white;
 }
 
 /* Change background color of buttons on hover */
 .tablinks:hover {
-    background-color: #ddd;
+    background-color: #a83e44;
 }
 
 /* Create an active/current tablink class */
 .tablinks.active {
-    background-color: #ccc;
+    background-color: #ff999e;
 }
 
 .tablinksHome{
     display:table-cell;
     background-color: inherit;
     float: left;
-    border: 1px solid black;
+    border: 1px solid white;
     outline: none;
     cursor: pointer;
     padding: 14px 16px 14px 16px;
@@ -48,23 +49,24 @@
     width: 70%;
     font-size: 1.3em;
     overflow: hidden;
+    color: white;
 }
 
 /* Change background color of buttons on hover */
 .tablinksHome:hover {
-    background-color: #ddd;
+    background-color: #a83e44;
 }
 
 /* Create an active/current tablink class */
 .tablinksHome.active {
-    background-color: #ccc;
+    background-color: #ff999e;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
+    padding: 2% 5%;
+    border: 1px solid #ff999e;
     border-top: none;
 }
 
@@ -72,3 +74,5 @@
 #Home {
     display : block;
 }
+
+
