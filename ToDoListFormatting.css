@@ -19,17 +19,22 @@
     padding-left: 3%;
     padding-right: 3%;
     width: 94%;
+    border-collapse: separate;
+    border-spacing:0 15px;
+    margin:auto;
 }
 /*each list item of checklist*/
-#checklist li {
+#checklist tr {
     list-style-type: none;
     cursor: pointer;
-    padding: 6px;
+    padding: 10%;
     transition: 0.3s;
+    height: 40px;
+
 
 }
 /*when you hover over an item*/
-#checklist li:hover {
+#checklist tr:hover {
     background: #434343;
     color: white;
 }
@@ -53,6 +58,7 @@
     text-align: center;
     background-color: #ff999e;
     border-radius: 20px;
+    margin-bottom: 2%;
 
 }
 
@@ -60,4 +66,17 @@
     width: 40px;
     display: inline-block;
     vertical-align: bottom
+}
+
+.closeTask {
+    text-align: center;
+    width: 40px;
+    color: #ff5962;
+    transition: 0.3s;
+}
+
+.closeTask:hover{
+    background-color: #ff5962;
+    color: #ffced0;
+
 }
