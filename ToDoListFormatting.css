@@ -80,3 +80,7 @@
     color: #ffced0;
 
 }
+
+.task {
+    overflow: clip;
+}

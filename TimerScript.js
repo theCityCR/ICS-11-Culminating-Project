@@ -39,7 +39,16 @@ function hhmmss(miliseconds) //Function to convert miliseconds to hh:mm:ss form
 }
 
 function startButtonClick() {
+    document.getElementById("startButton").disabled=true;//Stop the button from being clicked so this method won't run mulitple times at once
     timerStart = !timerStart;
+
+    if(!timerStart){
+        document.getElementById("startButton").innerHTML = "Start timer";
+    }
+    else{
+        document.getElementById("startButton").innerHTML = "Stop timer"; //change the button
+    }
+
     if (timerStart) {
 
         if (workTime&&timerRunning){
@@ -54,28 +63,36 @@ function startButtonClick() {
             document.getElementById("timerHeader").innerHTML="Take a break!";
         }
 
-        let timerRepeatId = setInterval(function () {
+        setTimeout(function(){
+            let timerRepeatId = setInterval(function () {
+                document.getElementById("startButton").disabled=false; //Allow for a new press
+                //startButtonDOM.className+=" active";
 
-            //startButtonDOM.className+=" active";
+                timerRunning=false;
+                document.getElementById("startButton").innerHTML = "Stop timer"; //change the button
+                time = time - 100;
+                document.getElementById("timeleft").innerHTML = hhmmss(time);
 
-            timerRunning=false;
-            document.getElementById("startButton").innerHTML = "Stop timer"; //change the button
-            time = time - 1000;
-            document.getElementById("timeleft").innerHTML = hhmmss(time);
+                if (!timerStart) //If we should stop the timer
+                {
+                    document.getElementById("startButton").innerHTML = "Start timer";
+                    //startButtonDOM.className.replace(" active", "");
+                    clearInterval(timerRepeatId); //stop the interval
 
-            if (!timerStart) //If we should stop the timer
-            {
-                document.getElementById("startButton").innerHTML = "Start timer";
-                //startButtonDOM.className.replace(" active", "");
-                clearInterval(timerRepeatId); //stop the interval
-            }
+                }
 
-            if (time<1000){
-                workTime=!workTime;
-                timerStart=false;
-                timerRunning=true;
-                clearInterval(timerRepeatId);
-            }
-        }, 1000); //every 1 second the timer value is reevaluated
+                if (time<1000){
+                    workTime=!workTime;
+                    timerStart=false;
+                    timerRunning=true;
+                    clearInterval(timerRepeatId);
+                    document.getElementById("startButton").innerHTML = "End Timer";
+                    document.getElementById("timerHeader").innerHTML="Time's up!";
+                }
+            }, 100); //every 1 milisecond the timer value is reevaluated
+        },1000);
+        document.getElementById("startButton").disabled=false;//If the timer wasn't in running, it will be allowed for a new press
+
     }
+
 }

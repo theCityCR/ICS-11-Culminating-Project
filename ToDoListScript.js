@@ -5,6 +5,8 @@ for (i=0;i<tasks.length;i++){
     tasks[i].addEventListener("click",checkTask);
     x[i].addEventListener("click",closeTask);
 }
+
+document.addEventListener("keydown",defaultEnter,false);
 function addTask(){
 
     newRow = document.createElement("tr"); //New task element in the list
@@ -46,6 +48,13 @@ function closeTask(event){
     taskRow=event.currentTarget.parentElement;
     taskRow.remove();
 }
+
+function defaultEnter(event) {
+    if (event.keyCode===13){//&&tablinks open is to o list
+
+    }
+}
+
 
 
 
