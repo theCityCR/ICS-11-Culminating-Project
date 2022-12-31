@@ -7,7 +7,7 @@ timerRunning=true;
 
 
 
-let time;
+let time, endDate;
 let startButtonDOM=document.getElementById("startButton");
 
 function hhmmss(miliseconds) //Function to convert miliseconds to hh:mm:ss form
@@ -53,12 +53,14 @@ function startButtonClick() {
 
         if (workTime&&timerRunning){
             time = 5000; //default time of 30:00
+            endDate = Date.now() + time;
             document.getElementById("timeleft").innerHTML = hhmmss(time); //Set the timer to display 30:00 not 1800000
             document.getElementById("timerHeader").innerHTML="Time to work!";
         }
 
         else if (!workTime&&timerRunning){
             time = 300000; //default time of 30:00
+            endDate = Date.now() + time;
             document.getElementById("timeleft").innerHTML = hhmmss(time); //Set the timer to display 5:00 not 300000
             document.getElementById("timerHeader").innerHTML="Take a break!";
         }
@@ -70,7 +72,7 @@ function startButtonClick() {
 
                 timerRunning=false;
                 document.getElementById("startButton").innerHTML = "Stop timer"; //change the button
-                time = time - 100;
+                time = endDate - Date.now();
                 document.getElementById("timeleft").innerHTML = hhmmss(time);
 
                 if (!timerStart) //If we should stop the timer
