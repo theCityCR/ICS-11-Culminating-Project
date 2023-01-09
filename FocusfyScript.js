@@ -21,3 +21,8 @@ function openTab(evt, cityName) {
 
 }
 document.getElementById("defaultOpen").click(); //default open home
+
+document.getElementById("date").innerHTML = new Date().toString();
+setInterval( function(){
+    document.getElementById("date").innerHTML = new Date().toString();
+},10)
