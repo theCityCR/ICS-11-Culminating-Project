@@ -2,11 +2,10 @@
 Spacing of the tables
  */
 
-.ScheduleTable td, .ScheduleTable {
-    padding: 5px;
-    border-spacing: 5px;
+.ScheduleTableHeader td, .ScheduleTableHeader {
+    padding: 0.5%;
     border:1px solid black;
-    width: 20%;
+    width: 14.2857142857%;
     text-align: center;
 }
 
@@ -14,14 +13,10 @@ Spacing of the tables
 Takes care of the width of the tables
  */
 
-.ScheduleTable {
+.ScheduleTableHeader {
     width: 100%;
 }
 
 /*
 Title of the schedule
  */
-
-#ScheduleTitle{
-    font-weight: bold;
-}
