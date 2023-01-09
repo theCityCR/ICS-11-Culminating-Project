@@ -81,3 +81,31 @@
     padding-top: 20px;
     color: white;
 }
+
+#checklistHome {
+    overflow: auto;
+    border: none;
+    background-color: #eff2ef;
+    color: #434343;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 94%;
+    border-collapse: separate;
+    border-spacing:0 15px;
+    margin:auto;
+}
+/*each list item of checklist*/
+#checklisthome tr {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10%;
+    transition: 0.3s;
+    height: 40px;
+
+
+}
+/*when you hover over an item*/
+#checklistHome tr:hover {
+    background: #434343;
+    color: white;
+}
