@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b14da62-22a9-4052-adc2-f80bea425c39" name="Changes" comment="Fixing not able to pull" />
+    <list default="true" id="9b14da62-22a9-4052-adc2-f80bea425c39" name="Changes" comment="Fixed hovering colour" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +57,7 @@
       <workItem from="1671634819920" duration="3428000" />
       <workItem from="1671718019674" duration="4135000" />
       <workItem from="1673272949958" duration="1118000" />
-      <workItem from="1673274093237" duration="313000" />
+      <workItem from="1673274093237" duration="890000" />
     </task>
     <task id="LOCAL-00001" summary="Added Timer and reformatted the tab bar">
       <created>1671546439339</created>
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673273273500</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed hovering colour">
+      <created>1673274500810</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673274500810</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +147,7 @@
     <MESSAGE value="Fixed buggy home button" />
     <MESSAGE value="Fixed timer" />
     <MESSAGE value="Fixing not able to pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing not able to pull" />
+    <MESSAGE value="Fixed hovering colour" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed hovering colour" />
   </component>
 </project>

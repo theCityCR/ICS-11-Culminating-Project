@@ -50,8 +50,8 @@ function closeTask(event){
 }
 
 function defaultEnter(event) {
-    if (event.keyCode===13){//&&tablinks open is to o list
-
+    if (event.keyCode===13&&document.getElementById("To-do List").style.display==="block"){
+        addTask();
     }
 }
 
