@@ -27,7 +27,7 @@
 
 /* Change background color of buttons on hover */
 .tablinks:hover {
-    background-color: #a83e44;
+    background-color: #ff999e;
 }
 
 /* Create an active/current tablink class */
@@ -54,7 +54,7 @@
 
 /* Change background color of buttons on hover */
 .tablinksHome:hover {
-    background-color: #a83e44;
+    background-color: #ff999e;
 }
 
 /* Create an active/current tablink class */
