@@ -1,0 +1,42 @@
+Index: ToDoListScript.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>tasks=document.getElementsByClassName(\"task\");\r\nx=document.getElementsByClassName(\"closeTask\");\r\n\r\nfor (i=0;i<tasks.length;i++){\r\n    tasks[i].addEventListener(\"click\",checkTask);\r\n    x[i].addEventListener(\"click\",closeTask);\r\n}\r\n\r\ndocument.addEventListener(\"keydown\",defaultEnter,false);\r\nfunction addTask(){\r\n\r\n    newRow = document.createElement(\"tr\"); //New task element in the list\r\n    newTask=document.createElement(\"td\")\r\n    newTask.className=\"task\";\r\n    newX=document.createElement(\"td\");\r\n    newX.className=\"closeTask\";\r\n    taskValue = document.createTextNode(document.getElementById(\"taskAdder\").value);//take the taskvalue from the input\r\n    newTask.appendChild(taskValue); //add the task value as the value for the new task\r\n    newX.appendChild(document.createTextNode(\"✖\"));\r\n\r\n    if (document.getElementById(\"taskAdder\").value !== '') {\r\n        document.getElementById(\"taskAdder\").value = \"\";\r\n\r\n        newRow.append(newTask);\r\n        newRow.append(newX);\r\n\r\n        checklist = document.getElementById(\"checklist\");\r\n        checklist.append(newRow);\r\n    }\r\n\r\n    newTask.addEventListener(\"click\",checkTask);\r\n    newX.addEventListener(\"click\",closeTask);\r\n}\r\n\r\nfunction checkTask(event){\r\n    task=event.currentTarget\r\n    check=task.previousElementSibling;\r\n    if (task.style.textDecoration!== \"line-through\"){\r\n        task.style.textDecoration = \"line-through\";\r\n    }\r\n    else {\r\n        task.style.textDecoration = \"\";\r\n    }\r\n\r\n}\r\n\r\nfunction closeTask(event){\r\n    taskRow=event.currentTarget.parentElement;\r\n    taskRow.remove();\r\n}\r\n\r\nfunction defaultEnter(event) {\r\n    if (event.keyCode===13){//&&tablinks open is to o list\r\n\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ToDoListScript.js b/ToDoListScript.js
+--- a/ToDoListScript.js	(revision 59ed5baa07da8b8710e960cf674b72ea6269b701)
++++ b/ToDoListScript.js	(date 1673273618176)
+@@ -50,8 +50,8 @@
+ }
+ 
+ function defaultEnter(event) {
+-    if (event.keyCode===13){//&&tablinks open is to o list
+-
++    if (event.keyCode===13&&document.getElementById("To-do List").style.display==="block"){
++        addTask();
+     }
+ }
+ 
+Index: TimerScript.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>timerStart=false; //To check if the timer should be running\r\nworkTime=true;//show work timer not break timer\r\ntimerRunning=true;\r\n\r\n\r\n\r\n\r\n\r\n\r\nlet time, endDate;\r\nlet startButtonDOM=document.getElementById(\"startButton\");\r\n\r\nfunction hhmmss(miliseconds) //Function to convert miliseconds to hh:mm:ss form\r\n{\r\n    let hours=\"\"+Math.floor(miliseconds/3600000);\r\n    let minutes=\"\"+Math.floor((miliseconds-hours*3600000)/60000);\r\n    let seconds=\"\"+Math.floor((miliseconds-hours*3600000-minutes*60000)/1000);\r\n\r\n\r\n    if (seconds.length===1)\r\n    {\r\n        seconds=\"0\"+seconds;//two digits for seconds\r\n    }\r\n\r\n\r\n\r\n    if (hours===\"0\")\r\n    {\r\n        return (\"\"+minutes+\":\"+seconds);\r\n    }\r\n    else if (hours.length===1)\r\n    {\r\n        return (\"\"+hours+\":\"+minutes+\":\"+seconds);\r\n    }\r\n    else\r\n    {\r\n        return (\"\"+hours+\":\"+minutes+\":\"+seconds);\r\n    }\r\n}\r\n\r\nfunction startButtonClick() {\r\n    document.getElementById(\"startButton\").disabled=true;//Stop the button from being clicked so this method won't run mulitple times at once\r\n    timerStart = !timerStart;\r\n\r\n    if(!timerStart){\r\n        document.getElementById(\"startButton\").innerHTML = \"Start timer\";\r\n    }\r\n    else{\r\n        document.getElementById(\"startButton\").innerHTML = \"Stop timer\"; //change the button\r\n    }\r\n\r\n    if (timerStart) {\r\n\r\n        if (workTime&&timerRunning){\r\n            time = 5000; //default time of 30:00\r\n            endDate = Date.now() + time;\r\n            document.getElementById(\"timeleft\").innerHTML = hhmmss(time); //Set the timer to display 30:00 not 1800000\r\n            document.getElementById(\"timerHeader\").innerHTML=\"Time to work!\";\r\n        }\r\n\r\n        else if (!workTime&&timerRunning){\r\n            time = 300000; //default time of 30:00\r\n            endDate = Date.now() + time;\r\n            document.getElementById(\"timeleft\").innerHTML = hhmmss(time); //Set the timer to display 5:00 not 300000\r\n            document.getElementById(\"timerHeader\").innerHTML=\"Take a break!\";\r\n        }\r\n\r\n        setTimeout(function(){\r\n            let timerRepeatId = setInterval(function () {\r\n                document.getElementById(\"startButton\").disabled=false; //Allow for a new press\r\n                //startButtonDOM.className+=\" active\";\r\n\r\n                timerRunning=false;\r\n                document.getElementById(\"startButton\").innerHTML = \"Stop timer\"; //change the button\r\n                time = endDate - Date.now();\r\n                document.getElementById(\"timeleft\").innerHTML = hhmmss(time);\r\n\r\n                if (!timerStart) //If we should stop the timer\r\n                {\r\n                    document.getElementById(\"startButton\").innerHTML = \"Start timer\";\r\n                    //startButtonDOM.className.replace(\" active\", \"\");\r\n                    clearInterval(timerRepeatId); //stop the interval\r\n\r\n                }\r\n\r\n                if (time<1000){\r\n                    workTime=!workTime;\r\n                    timerStart=false;\r\n                    timerRunning=true;\r\n                    clearInterval(timerRepeatId);\r\n                    document.getElementById(\"startButton\").innerHTML = \"End Timer\";\r\n                    document.getElementById(\"timerHeader\").innerHTML=\"Time's up!\";\r\n                }\r\n            }, 100); //every 1 milisecond the timer value is reevaluated\r\n        },1000);\r\n        document.getElementById(\"startButton\").disabled=false;//If the timer wasn't in running, it will be allowed for a new press\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/TimerScript.js b/TimerScript.js
+--- a/TimerScript.js	(revision 59ed5baa07da8b8710e960cf674b72ea6269b701)
++++ b/TimerScript.js	(date 1673273293287)
+@@ -3,10 +3,6 @@
+ timerRunning=true;
+ 
+ 
+-
+-
+-
+-
+ let time, endDate;
+ let startButtonDOM=document.getElementById("startButton");
+ 
