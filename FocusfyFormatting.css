@@ -93,6 +93,7 @@
     border-collapse: separate;
     border-spacing:0 15px;
     margin:auto;
+    margin-bottom: 3%;
 }
 /*each list item of checklist*/
 #checklisthome tr {
@@ -108,4 +109,16 @@
 #checklistHome tr:hover {
     background: #434343;
     color: white;
+    transition: 0.3s;
+}
+
+#date {
+    font-size: 1.7em;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#homeToDoListHeader {
+    font-size: 1.3em;
+    text-align: center;
 }

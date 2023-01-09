@@ -52,7 +52,14 @@ function checkTask(event){
 
 function closeTask(event){
     taskRow=event.currentTarget.parentElement;
-    taskvalue=event.innerHTML;
+    taskvalue=event.currentTarget.parentElement.getElementsByTagName("td")[0].innerHTML;
+    hometasks=document.getElementById("checklistHome").getElementsByTagName("td");
+    for (i=0; i<hometasks.length;i++){
+        if (hometasks[i].innerHTML===taskvalue){
+             hometasks[i].parentElement.remove();
+             break;
+        }
+    }
     taskRow.remove();
 }
 

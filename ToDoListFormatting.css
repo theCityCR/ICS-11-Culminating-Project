@@ -37,6 +37,7 @@
 #checklist tr:hover {
     background: #434343;
     color: white;
+    transition: 0.3s;
 }
 
 #taskAdder{

@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9b14da62-22a9-4052-adc2-f80bea425c39" name="Changes" comment="Can use enter as input for tasks">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-09_9_39_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-01-09_9_39_a_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_2023-01-09_9_19_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_2023-01-09_9_19_a_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-09_9_03_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-09_9_03_a_m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Focusfy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Focusfy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FocusfyFormatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/FocusfyFormatting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FocusfyScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/FocusfyScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToDoListScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/ToDoListScript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="AlexTest" />
+        <entry key="$PROJECT_DIR$" value="AlexTestRaymond" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
