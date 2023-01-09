@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b14da62-22a9-4052-adc2-f80bea425c39" name="Changes" comment="Fixed hovering colour">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_2023-01-09_9_19_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Reset_at_2023-01-09_9_19_a_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-09_9_03_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-09_9_03_a_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9b14da62-22a9-4052-adc2-f80bea425c39" name="Changes" comment="added date and time on homepage">
       <change beforePath="$PROJECT_DIR$/Focusfy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Focusfy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FocusfyScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/FocusfyScript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673274500810</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added date and time on homepage">
+      <created>1673276263806</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673276263806</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +157,7 @@
     <MESSAGE value="Fixed timer" />
     <MESSAGE value="Fixing not able to pull" />
     <MESSAGE value="Fixed hovering colour" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed hovering colour" />
+    <MESSAGE value="added date and time on homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="added date and time on homepage" />
   </component>
 </project>
