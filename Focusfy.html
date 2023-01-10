@@ -21,23 +21,34 @@
     <p>Welcome to focusfy</p>
     <p>Explaination of the home page</p>
 </div>
-
 <div id="Schedule" class="tabcontent">
-    <table class="ScheduleTableHeader">
-        <tr id="weekday">
-            <td> Sun </td>
-            <td> Mon </td>
-            <td> Tue </td>
-            <td> Wed </td>
-            <td> Thu </td>
-            <td> Fri </td>
-            <td> Sat </td>
-        </tr>
-    </table>
-    <table class="ScheduleTable">
-
-    </table>
-    <p>Time table</p>
+    <div id="scheduleIn">
+        <input id = "addSchedule" type="text" placeholder="Add tasks">
+        <label for="daySelect">Day:</label>
+        <select id="daySelect">
+            <option value="sunday">Sunday</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+        </select>
+        <img src="addTaskButton.png" alt="Add task" id = "addScheduleButton" onclick="addTask()">
+    </div>
+    <div>
+        <table class="ScheduleTable">
+            <tr>
+                <td> HI </td>
+                <td> HI </td>
+                <td> HI </td>
+                <td> HI </td>
+                <td> HI </td>
+                <td> HI </td>
+                <td> HI </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <div id="To-do List" class="tabcontent">

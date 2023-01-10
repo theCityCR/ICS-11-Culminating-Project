@@ -1,12 +1,14 @@
 /*
 Spacing of the tables
  */
-
-.ScheduleTableHeader td, .ScheduleTableHeader {
+.ScheduleTable td{
     padding: 0.5%;
     border:1px solid black;
     width: 14.2857142857%;
     text-align: center;
+}
+.ScheduleTable {
+    width: 100%;
 }
 
 /*
@@ -15,6 +17,12 @@ Takes care of the width of the tables
 
 .ScheduleTableHeader {
     width: 100%;
+}
+
+#addScheduleButton {
+    width: 40px;
+    display: inline-block;
+    vertical-align: bottom
 }
 
 /*
