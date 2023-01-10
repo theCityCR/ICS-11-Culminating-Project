@@ -1,11 +1,15 @@
-
+body {
+    margin: 0px;
+}
 /* Style the tab */
 .tab {
-    overflow: hidden;
+    overflow: visible;
     background-color: #ff5962;
     width: 100%;
     display:table;
     height: 60px;
+    top: 0;
+    position: sticky;
 }
 
 /* Style the buttons that are used to open the tab content */
