@@ -3,10 +3,8 @@ body {
 }
 /* Style the tab */
 .tab {
-    overflow: visible;
     background-color: #ff5962;
     width: 100%;
-    display:table;
     height: 60px;
     top: 0;
     position: sticky;
@@ -20,12 +18,10 @@ body {
     border: 1px solid white;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px 14px 16px;
     transition: 0.3s;
     text-align: center;
     width: 10%;
     height: 100%;
-    overflow: hidden;
     color: white;
 }
 
@@ -46,7 +42,6 @@ body {
     border: 1px solid white;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px 14px 16px;
     transition: 0.3s;
     text-align: left;
     height: 100%;
