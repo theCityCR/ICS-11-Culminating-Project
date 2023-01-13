@@ -59,7 +59,7 @@
         <h1 class="tabHeader">To-do List</h1>
         <div id="input">
             <input id = "taskAdder" type="text" placeholder="Add tasks">
-            <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()">
+            <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()" onmouseover="changeImg()" onmouseout="changeImg()">
         </div>
         <table id="checklist">
             <tr>
@@ -67,11 +67,6 @@
                 <td class="closeTask">✖</td>
             </tr>
         </table>
-        <!--<ul id="checklist">
-            <li>ICS test <span>x</span></li>
-            <li>TTmath homework</li>
-            <li>Brawl Stars?</li>
-        </ul>-->
     </div>
 </div>
 

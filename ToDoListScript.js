@@ -1,6 +1,8 @@
 tasks=document.getElementsByClassName("task");
 x=document.getElementsByClassName("closeTask");
 
+whichImg=true;
+
 for (i=0;i<tasks.length;i++){
     tasks[i].addEventListener("click",checkTask);
     x[i].addEventListener("click",closeTask);
@@ -69,6 +71,16 @@ function defaultEnter(event) {
     }
 }
 
+function changeImg() {
+    whichImg=!whichImg;
+    if (whichImg){
+        document.getElementById("addTaskButton").src="addTaskButton.png";
+    }
+    else {
+        document.getElementById("addTaskButton").src="addTaskButtonHover.png";
+    }
+
+}
 
 
 

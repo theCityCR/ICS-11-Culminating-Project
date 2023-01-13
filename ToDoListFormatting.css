@@ -83,5 +83,5 @@
 }
 
 .task {
-    overflow: clip;
+    overflow: hidden;
 }
