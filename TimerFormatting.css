@@ -32,6 +32,8 @@
 /*hovering the start button*/
 .startButton:hover {
     background-color: #a83e44;
+    color: white;
+    transition: 0.2s;
 }
 
 /*after clicking the start button*/
