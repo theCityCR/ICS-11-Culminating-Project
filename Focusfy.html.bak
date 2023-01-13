@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focusfy</title>
+
+</head>
+<body>
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinksHome" id="defaultOpen" onclick="openTab(event, 'Home')"  >Focusfy</button>
+    <button class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button>
+    <button class="tablinks" onclick="openTab(event, 'To-do List')">To-do List</button>
+    <button class="tablinks" onclick="openTab(event, 'Focus Timer')">Focus Timer</button>
+</div>
+
+<!-- Tab content -->
+<div id="Home" class="tabcontent">
+    <div>
+        <div style="width: 70%; border: 1px solid black; display: inline-block">
+            <p id="date">What's the date?</p>
+            <div>
+                <p id="homeToDoListHeader">Your to-do list for today:</p>
+                <table id="checklistHome">
+                    <tr>
+                        <td class="taskHome">Mark ICS Projects</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div style = "width: 29%; border: 1px solid red; display: inline-block">
+
+        </div>
+    </div>
+</div>
+
+<div id="Schedule" class="tabcontent">
+    <h3>Time Table</h3>
+    <table class="ScheduleTable">
+        <tr id="ScheduleTitle">
+            <td> Period </td>
+            <td> Time </td>
+            <td> Course Code </td>
+            <td> Room </td>
+            <td> Teacher </td>
+        </tr>
+        <tr><td>1</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>2</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>3</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>4</td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <p>Time table</p>
+</div>
+
+<div id="To-do List" class="tabcontent">
+
+    <div class="checklistOutline">
+        <h1 class="tabHeader">To-do List</h1>
+        <div id="input">
+            <input id = "taskAdder" type="text" placeholder="Add tasks">
+            <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()" onmouseover="changeImg()" onmouseout="changeImg()">
+        </div>
+        <table id="checklist">
+            <tr>
+                <td class="task">Mark ICS Projects</td>
+                <td class="closeTask">✖</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="Focus Timer" class="tabcontent">
+    <div class="timer">
+        <p id="timeleft">30:00</p>
+        <div class="buttonDiv">
+            <button class="startButton" id = "startButton" onclick="startButtonClick()">Start Timer</button>
+        </div>
+
+    </div>
+    <h1 class = "tabHeader" id="timerHeader">Time to work!</h1>
+</div>
+
+<script type="text/javascript" src="FocusfyScript.js"></script>
+<link rel="stylesheet" href="FocusfyFormatting.css">
+<script type="text/javascript" src="ScheduleScript.js"></script>
+<link rel="stylesheet" href="ScheduleFormatting.css">
+<script type="text/javascript" src="ToDoListScript.js"></script>
+<link rel="stylesheet" href="ToDoListFormatting.css">
+<script type="text/javascript" src="TimerScript.js"></script>
+<link rel="stylesheet" href="TimerFormatting.css">
+
+</body>
+</html>

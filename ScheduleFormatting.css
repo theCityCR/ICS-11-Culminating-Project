@@ -1,0 +1,44 @@
+/*
+Spacing of the tables
+ */
+.scheduleTable th{
+    padding: 0.5%;
+    border:1px solid black;
+    width: 14.2857142857%;
+    text-align: center;
+    max-width: 14.2857142857%;
+}
+.scheduleTable {
+    display: table-cell;
+    max-width: 14.2857142857%;
+}
+
+#tableDiv table {
+    float: left;
+    width: 14.2857142857%;
+    max-width: 14.2857142857%;
+}
+
+/*
+Takes care of the width of the tables
+ */
+
+#addScheduleButton {
+    width: 40px;
+    display: inline-block;
+    vertical-align: bottom
+}
+
+/*Fix text overflow*/
+
+/*.scheduleDiv {*/
+/*    max-width: 100%;*/
+/*    overflow: auto;*/
+/*}*/
+/*.scheduleRow {*/
+/*    max-width: 200px;*/
+/*}*/
+/*.scheduleData {*/
+/*    width: 100%;*/
+
+/*}*/
