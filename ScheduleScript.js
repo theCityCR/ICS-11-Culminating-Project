@@ -1,20 +1,29 @@
 numRows = 0;
 function addSchedule(event) {
-    scheduleTable = document.getElementById("scheduleTable")
-    if (numRows === 0) {
-        let newRow = document.createElement("tr");
-        let newSchedule = document.createElement("td");
-        newSchedule.className = "scheduleTask";
-        let scheduleValue = document.createTextNode(document.getElementById("addSchedule").value);
-        if (document.getElementById("addSchedule").value !== '') {
-            for (let i = 0; i < 7; i++) {
+    let day = document.getElementById("daySelect").value;
+    let scheduleTable = document.getElementById(day);
+    let newRow = document.createElement("tr");
+    let newData = document.createElement("td");
+    let newDiv = document.createElement("div");
+    newDiv.className = "scheduleDiv";
+    newRow.className = "scheduleRow";
+    newData.className = "scheduleData";
+    let scheduleValue = document.createTextNode(document.getElementById("addSchedule").value);
+    if (document.getElementById("addSchedule").value !== '') {
+        document.getElementById("addSchedule").value = "";
 
-            }
-            document.getElementById("addSchedule").value = "";
-            newSchedule.appendChild(scheduleValue);
-
-        }
+        newDiv.appendChild(scheduleValue);
+        newData.append(newDiv);
+        newRow.append(newData);
+        scheduleTable.append(newRow);
+        newData.addEventListener("click",deleteSchedule);
     }
+
     // newRow = document.createElement("tr");
 
+}
+
+function deleteSchedule(event) {
+    let task = event.currentTarget;
+    task.innerHTML = "";
 }

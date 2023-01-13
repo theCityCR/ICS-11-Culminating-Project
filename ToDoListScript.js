@@ -8,7 +8,6 @@ for (i=0;i<tasks.length;i++){
 
 document.addEventListener("keydown",defaultEnter,false);
 function addTask(){
-
     newRow = document.createElement("tr"); //New task element in the list
     newTask=document.createElement("td")
     newTask.className="task";
