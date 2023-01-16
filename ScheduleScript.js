@@ -18,12 +18,9 @@ function addSchedule(event) {
         scheduleTable.append(newRow);
         newData.addEventListener("click",deleteSchedule);
     }
-
-    // newRow = document.createElement("tr");
-
 }
 
 function deleteSchedule(event) {
     let task = event.currentTarget;
-    task.innerHTML = "";
+    task.remove();
 }
