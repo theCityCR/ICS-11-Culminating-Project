@@ -1,10 +1,29 @@
-// Adds the event listener to the document
-document.getElementById("scheduleUpload").addEventListener("change", addSchedule);
-
-/*
-Adds the schedule
- */
+numRows = 0;
 function addSchedule(event) {
-    const schedule = event.target.files[0];
+    let day = document.getElementById("daySelect").value;
+    let scheduleTable = document.getElementById(day);
+    let newRow = document.createElement("tr");
+    let newData = document.createElement("td");
+    let newDiv = document.createElement("div");
+    newDiv.className = "scheduleDiv";
+    newRow.className = "scheduleRow";
+    newData.className = "scheduleData";
+    let scheduleValue = document.createTextNode(document.getElementById("addSchedule").value);
+    if (document.getElementById("addSchedule").value !== '') {
+        document.getElementById("addSchedule").value = "";
 
+        newDiv.appendChild(scheduleValue);
+        newData.append(newDiv);
+        newRow.append(newData);
+        scheduleTable.append(newRow);
+        newData.addEventListener("click",deleteSchedule);
+    }
+
+    // newRow = document.createElement("tr");
+
+}
+
+function deleteSchedule(event) {
+    let task = event.currentTarget;
+    task.innerHTML = "";
 }
