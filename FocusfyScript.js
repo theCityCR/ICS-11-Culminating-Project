@@ -20,4 +20,30 @@ function openTab(evt, cityName) {
 
 
 }
+
+function dateFormatting(){
+    dateArr=new Date().toString().substring(0,15).split(" ");
+    weekday=dateArr[0];
+    month=dateArr[1];
+    day=dateArr[2];
+    year=dateArr[3]
+
+    switch (weekday){
+        case "Sun": weekday="Sunday";break;
+        case "Mon": weekday="Monday";break;
+        case "Tue": weekday="Tuesday";break;
+        case "Wed": weekday="Wednesday";break;
+        case "Thu": weekday="Thursday";break;
+        case "Fri": weekday="Friday";break;
+        case "Sat": weekday="Saturday";break;
+    }
+    finaldate=weekday+" "+month+". "+day+", "+year;
+    return finaldate;
+}
+
 document.getElementById("defaultOpen").click(); //default open home
+
+document.getElementById("date").innerHTML = dateFormatting()
+setInterval( function(){
+    document.getElementById("date").innerHTML = dateFormatting()
+},1000)

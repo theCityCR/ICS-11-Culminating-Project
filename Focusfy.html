@@ -16,10 +16,23 @@
 
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
-    <h1>Focusfy</h1>
-    <p id="date">Put date here</p>
-    <p>Welcome to focusfy</p>
-    <p>Explaination of the home page</p>
+    <div>
+        <div style="width: 70%; border: 1px solid black; display: inline-block">
+            <p id="date">What's the date?</p>
+            <div>
+                <p id="homeToDoListHeader">Your to-do list for today:</p>
+                <table id="checklistHome">
+                    <tr>
+                        <td class="taskHome">Mark ICS Projects</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div style = "width: 29%; border: 1px solid red; display: inline-block">
+
+        </div>
+    </div>
 </div>
 <div id="Schedule" class="tabcontent">
     <div id="scheduleIn">
@@ -81,27 +94,14 @@
         <h1 class="tabHeader">To-do List</h1>
         <div id="input">
             <input id = "taskAdder" type="text" placeholder="Add tasks">
-            <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()">
+            <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()" onmouseover="changeImg()" onmouseout="changeImg()">
         </div>
         <table id="checklist">
             <tr>
-                <td class="task">ICS test<br>hello</td>
-                <td class="closeTask">✖</td>
-            </tr>
-            <tr>
-                <td class="task">ICS test</td>
-                <td class="closeTask">✖</td>
-            </tr>
-            <tr>
-                <td class="task">ICS test</td>
+                <td class="task">Mark ICS Projects</td>
                 <td class="closeTask">✖</td>
             </tr>
         </table>
-        <!--<ul id="checklist">
-            <li>ICS test <span>x</span></li>
-            <li>TTmath homework</li>
-            <li>Brawl Stars?</li>
-        </ul>-->
     </div>
 </div>
 

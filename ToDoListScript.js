@@ -1,6 +1,8 @@
 tasks=document.getElementsByClassName("task");
 x=document.getElementsByClassName("closeTask");
 
+whichImg=true;
+
 for (i=0;i<tasks.length;i++){
     tasks[i].addEventListener("click",checkTask);
     x[i].addEventListener("click",closeTask);
@@ -9,25 +11,31 @@ for (i=0;i<tasks.length;i++){
 document.addEventListener("keydown",defaultEnter,false);
 function addTask(){
     newRow = document.createElement("tr"); //New task element in the list
-    newTask=document.createElement("td")
-    newTask.className="task";
+    newTask1=document.createElement("td")
+    newTask1.className="task";
+    newTask2=document.createElement("td")
+    newTask2.className="task";
     newX=document.createElement("td");
     newX.className="closeTask";
-    taskValue = document.createTextNode(document.getElementById("taskAdder").value);//take the taskvalue from the input
-    newTask.appendChild(taskValue); //add the task value as the value for the new task
+    taskValue1 = document.createTextNode(document.getElementById("taskAdder").value);//take the taskvalue from the input
+    taskValue2 = document.createTextNode(document.getElementById("taskAdder").value);
+    newTask1.appendChild(taskValue1); //add the task value as the value for the new task
+    newTask2.appendChild(taskValue2); //add the task value as the value for the new task
     newX.appendChild(document.createTextNode("✖"));
-
+    newHomeTask=document.createElement("tr");
     if (document.getElementById("taskAdder").value !== '') {
         document.getElementById("taskAdder").value = "";
 
-        newRow.append(newTask);
+        newRow.append(newTask1);
         newRow.append(newX);
 
         checklist = document.getElementById("checklist");
         checklist.append(newRow);
-    }
 
-    newTask.addEventListener("click",checkTask);
+        newHomeTask.appendChild(newTask2);
+        document.getElementById("checklistHome").append(newHomeTask);
+    }
+    newTask1.addEventListener("click",checkTask);
     newX.addEventListener("click",closeTask);
 }
 
@@ -45,15 +53,33 @@ function checkTask(event){
 
 function closeTask(event){
     taskRow=event.currentTarget.parentElement;
+    taskvalue=event.currentTarget.parentElement.getElementsByTagName("td")[0].innerHTML;
+    hometasks=document.getElementById("checklistHome").getElementsByTagName("td");
+    for (i=0; i<hometasks.length;i++){
+        if (hometasks[i].innerHTML===taskvalue){
+             hometasks[i].parentElement.remove();
+             break;
+        }
+    }
     taskRow.remove();
 }
 
 function defaultEnter(event) {
-    if (event.keyCode===13){//&&tablinks open is to o list
-
+    if (event.keyCode===13&&document.getElementById("To-do List").style.display==="block"){
+        addTask();
     }
 }
 
+function changeImg() {
+    whichImg=!whichImg;
+    if (whichImg){
+        document.getElementById("addTaskButton").src="addTaskButton.png";
+    }
+    else {
+        document.getElementById("addTaskButton").src="addTaskButtonHover.png";
+    }
+
+}
 
 
 

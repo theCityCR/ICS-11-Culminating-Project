@@ -37,6 +37,7 @@
 #checklist tr:hover {
     background: #434343;
     color: white;
+    transition: 0.3s;
 }
 
 #taskAdder{
@@ -51,7 +52,7 @@
 }
 
 #input {
-    width:100%;
+    width:94%;
     margin: auto;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -82,5 +83,5 @@
 }
 
 .task {
-    overflow: clip;
+    overflow: hidden;
 }

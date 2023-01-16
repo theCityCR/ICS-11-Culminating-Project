@@ -1,11 +1,13 @@
-
+body {
+    margin: 0;
+}
 /* Style the tab */
 .tab {
-    overflow: hidden;
     background-color: #ff5962;
     width: 100%;
-    display:table;
     height: 60px;
+    top: 0;
+    position: sticky;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -16,12 +18,10 @@
     border: 1px solid white;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px 14px 16px;
     transition: 0.3s;
     text-align: center;
     width: 10%;
     height: 100%;
-    overflow: hidden;
     color: white;
 }
 
@@ -42,7 +42,6 @@
     border: 1px solid white;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px 14px 16px;
     transition: 0.3s;
     text-align: left;
     height: 100%;
@@ -80,4 +79,39 @@
     text-align: center;
     padding-top: 20px;
     color: white;
+}
+
+#checklistHome {
+    overflow: auto;
+    border: none;
+    background-color: #eff2ef;
+    color: #434343;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 94%;
+    border-collapse: separate;
+    border-spacing:0 15px;
+    margin:auto;
+    margin-bottom: 3%;
+}
+/*each list item of checklist*/
+#checklisthome tr {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10%;
+    transition: 0.3s;
+    height: 40px;
+
+
+}
+
+#date {
+    font-size: 1.7em;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#homeToDoListHeader {
+    font-size: 1.3em;
+    text-align: center;
 }
