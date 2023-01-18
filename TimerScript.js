@@ -1,7 +1,7 @@
 timerStart=false; //To check if the timer should be running
 workTime=true;//show work timer not break timer
 timerRunning=true;
-
+let alarm = new Audio("Alarm.mp3");
 
 
 
@@ -88,6 +88,8 @@ function startButtonClick() {
                     clearInterval(timerRepeatId);
                     document.getElementById("startButton").innerHTML = "End Timer";
                     document.getElementById("timerHeader").innerHTML="Time's up!";
+                    alarm.play();
+                    
                 }
             }, 100); //every 1 milisecond the timer value is reevaluated
         },1000);
