@@ -31,14 +31,18 @@ Takes care of the width of the tables
 
 /*Fix text overflow*/
 
-/*.scheduleDiv {*/
-/*    max-width: 100%;*/
-/*    overflow: auto;*/
-/*}*/
-/*.scheduleRow {*/
-/*    max-width: 200px;*/
-/*}*/
-/*.scheduleData {*/
-/*    width: 100%;*/
-
-/*}*/
+.scheduleDiv {
+    max-width: 100%;
+}
+.scheduleRow {
+    max-width: 100%;
+}
+.scheduleData {
+    margin: 0 auto;
+    max-width: 10%;
+    border: solid 2px #ccc;
+    padding: 12px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
