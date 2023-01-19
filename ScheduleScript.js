@@ -2,7 +2,7 @@ numRows = 0;
 let taskArr = [];
 let timeArr = [];
 
-// p u bli c s t a t i c i n t b i n a r y S e a r c h I t e r a t i v e ( i n t v ) {
+// p u bli c s t a t i c i n t b i n a r y S e a r c h( i n t v ) {
 //     i n t l = 0 ;
 //     i n t r = a r r . l e n g t h − 1 ;
 //     w hil e ( l <= r ) {
@@ -49,9 +49,6 @@ function addSchedule(event) {
     let arr=document.getElementById("sunday").getElementsByTagName("td");
     console.log(arr);
 }
-
-
-
 function deleteSchedule(event) {
     let task = event.currentTarget;
     task.remove();
