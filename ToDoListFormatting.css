@@ -69,6 +69,10 @@
     vertical-align: bottom
 }
 
+#addTaskButton {
+    cursor: pointer;
+}
+
 .closeTask {
     text-align: center;
     width: 40px;
