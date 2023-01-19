@@ -30,10 +30,6 @@ Takes care of the width of the tables
 }
 
 /*Fix text overflow*/
-
-.scheduleDiv {
-    max-width: 100%;
-}
 .scheduleRow {
     max-width: 100%;
 }
