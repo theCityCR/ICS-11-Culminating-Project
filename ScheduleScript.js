@@ -18,7 +18,7 @@ function binarySearch(arr, x) {
     }
     return -start-1;
 }
-function addSchedule(event) {
+function addSchedule() {
 
     let day = document.getElementById("daySelect").value;
     let start = document.getElementById("timeInput").value;

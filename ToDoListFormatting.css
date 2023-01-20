@@ -64,6 +64,7 @@
 }
 
 #addTaskButton {
+	cursor: pointer;
     width: 40px;
     display: inline-block;
     vertical-align: bottom
@@ -84,4 +85,5 @@
 
 .task {
     overflow: hidden;
+    border-radius: 10px;
 }

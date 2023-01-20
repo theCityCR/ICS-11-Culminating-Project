@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Focusfy</title>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 </head>
 <body>
 <!-- Tab links -->
@@ -17,20 +17,14 @@
 <!-- Tab content -->
 <div id="Home" class="tabcontent">
     <div>
-        <div style="width: 70%; border: 1px solid black; display: inline-block">
+        <div style="width: 100%; display: inline-block">
             <p id="date">What's the date?</p>
             <div>
                 <p id="homeToDoListHeader">Your to-do list for today:</p>
                 <table id="checklistHome">
-                    <tr>
-                        <td class="taskHome">Mark ICS Projects</td>
-                    </tr>
                 </table>
 
             </div>
-        </div>
-        <div style = "width: 29%; border: 1px solid red; display: inline-block">
-
         </div>
     </div>
 </div>
@@ -101,10 +95,6 @@
             <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()" onmouseover="changeImg()" onmouseout="changeImg()">
         </div>
         <table id="checklist">
-            <tr>
-                <td class="task">Mark ICS Projects</td>
-                <td class="closeTask">✖</td>
-            </tr>
         </table>
     </div>
 </div>

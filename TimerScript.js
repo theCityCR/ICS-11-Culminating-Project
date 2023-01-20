@@ -2,7 +2,7 @@ timerStart=false; //To check if the timer should be running
 workTime=true;//show work timer not break timer
 timerRunning=true;
 
-
+let alarm = new Audio("Alarm.mp3");
 
 
 
@@ -52,7 +52,7 @@ function startButtonClick() {
     if (timerStart) {
 
         if (workTime&&timerRunning){
-            time = 5000; //default time of 30:00
+            time = 1800000; //default time of 30:00
             document.getElementById("timeleft").innerHTML = hhmmss(time); //Set the timer to display 30:00 not 1800000
             document.getElementById("timerHeader").innerHTML="Time to work!";
         }
@@ -88,6 +88,7 @@ function startButtonClick() {
                     clearInterval(timerRepeatId);
                     document.getElementById("startButton").innerHTML = "End Timer";
                     document.getElementById("timerHeader").innerHTML="Time's up!";
+					alarm.play();
                 }
             }, 100); //every 1 milisecond the timer value is reevaluated
         },1000);
