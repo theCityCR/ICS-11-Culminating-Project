@@ -52,7 +52,7 @@ function startButtonClick() {
     if (timerStart) {
 
         if (workTime&&timerRunning){
-            time = 3000; //default time of 30:00
+            time = 1800000; //default time of 30:00
             document.getElementById("timeleft").innerHTML = hhmmss(time); //Set the timer to display 30:00 not 1800000
             document.getElementById("timerHeader").innerHTML="Time to work!";
         }
