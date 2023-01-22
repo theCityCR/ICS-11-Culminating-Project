@@ -1,3 +1,4 @@
+/* Outline of the checklist */
 .checklistOutline {
     border-radius: 30px;
     fill: darkgrey;
@@ -40,6 +41,7 @@
     transition: 0.3s;
 }
 
+/* Task adding part */
 #taskAdder{
     width: 70%;
     height: 40px;
@@ -51,6 +53,7 @@
     background-color: #ffced0;
 }
 
+/* input */
 #input {
     width:94%;
     margin: auto;
@@ -63,6 +66,7 @@
 
 }
 
+/* Task to add button */
 #addTaskButton {
 	cursor: pointer;
     width: 40px;
@@ -70,6 +74,7 @@
     vertical-align: bottom
 }
 
+/* The x */
 .closeTask {
     text-align: center;
     width: 40px;
@@ -77,12 +82,14 @@
     transition: 0.3s;
 }
 
+/* Hovering over the x */
 .closeTask:hover{
     background-color: #ff5962;
     color: #ffced0;
 
 }
 
+/* Each task */
 .task {
     overflow: hidden;
     border-radius: 10px;
