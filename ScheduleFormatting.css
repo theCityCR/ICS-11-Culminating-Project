@@ -3,11 +3,17 @@ Spacing of the tables
  */
 .scheduleTable th{
     padding: 0.5%;
-    border:1px solid black;
+    /*border: none;*/
     width: 14.2857142857%;
     text-align: center;
     max-width: 14.2857142857%;
+    font-size: large;
 }
+.circle {
+    color: #ff5962;
+}
+
+
 .scheduleTable {
     display: table-cell;
     max-width: 14.2857142857%;
@@ -24,7 +30,7 @@ Takes care of the width of the tables
  */
 
 #addScheduleButton {
-    width: 40px;
+    width: 25px;
     display: inline-block;
     vertical-align: bottom
 }
@@ -34,11 +40,34 @@ Takes care of the width of the tables
     max-width: 100%;
 }
 .scheduleData {
+    width: 100%;
+    background: #eff2ef;
+    border-radius: 10px;
+    border: none;
     margin: 0 auto;
     max-width: 10%;
-    border: solid 2px #ccc;
     padding: 12px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
+    text-align: center;
+}
+.scheduleData:hover {
+    background: #434343;
+    color: white;
+    transition: 0.3s;
+}
+
+.scheduleIn {
+    padding: 10px;
+    width: 45%;
+    height: 25%;
+    line-height: 25%;
+    background: #ff999e;
+    border-radius: 10px;
+    color: white;
+    /*border: solid 1px royalblue;*/
+    text-align: center;
+    /*display: inline-block;*/
+    margin: auto;
 }

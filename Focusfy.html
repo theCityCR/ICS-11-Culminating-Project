@@ -29,58 +29,82 @@
     </div>
 </div>
 <div id="Schedule" class="tabcontent">
-    <div id="scheduleIn">
-        <input id = "addSchedule" type="text" placeholder="Add tasks">
-        <label for="daySelect">Day:</label>
-        <select id="daySelect">
-            <option value="sunday">Sunday</option>
-            <option value="monday">Monday</option>
-            <option value="tuesday">Tuesday</option>
-            <option value="wednesday">Wednesday</option>
-            <option value="thursday">Thursday</option>
-            <option value="friday">Friday</option>
-            <option value="saturday">Saturday</option>
-        </select>
-        From
-        <input id="timeInput" type="time" name="time"/>
-        To
-        <input id="timeInput2" type="time" name="time"/>
+    <div class="scheduleIn">
+        <span style="vertical-align: center">
+            <input id = "addSchedule" type="text" placeholder="Task Name">
+            <label for="daySelect">Day:</label>
+            <select id="daySelect">
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+            From
+            <input id="timeInput" type="time" name="time"/>
+            To
+            <input id="timeInput2" type="time" name="time"/>
+        </span>
         <img src="addTaskButton.png" alt="Add task" id = "addScheduleButton" onclick="addSchedule()">
     </div>
+    <br>
     <div id="tableDiv">
         <table class="scheduleTable" id="sunday">
             <tr class="tableHeader">
                 <th> Sunday </th>
+            </tr>
+            <tr>
+                <th class="circle">●</th>
             </tr>
         </table>
         <table class="scheduleTable" id="monday">
             <tr class="tableHeader">
                 <th> Monday </th>
             </tr>
+            <tr>
+                <th class="circle">●</th>
+            </tr>
         </table>
         <table class="scheduleTable" id="tuesday">
             <tr class="tableHeader">
                 <th> Tuesday </th>
+            </tr>
+            <tr>
+                <th class="circle">●</th>
             </tr>
         </table>
         <table class="scheduleTable" id="wednesday">
             <tr class="tableHeader">
                 <th> Wednesday </th>
             </tr>
+            <tr>
+                <th class="circle">●</th>
+            </tr>
         </table>
         <table class="scheduleTable" id="thursday">
             <tr class="tableHeader">
                 <th> Thursday </th>
+            </tr>
+            <tr>
+                <th class="circle">●</th>
             </tr>
         </table>
         <table class="scheduleTable" id="friday">
             <tr class="tableHeader">
                 <th> Friday </th>
             </tr>
+            <tr>
+                <th class="circle">●</th>
+            </tr>
         </table>
         <table class="scheduleTable" id="saturday">
             <tr class="tableHeader">
                 <th> Saturday </th>
+            </tr>
+            <tr>
+                <th class="circle">●</th>
             </tr>
         </table>
     </div>
@@ -103,7 +127,7 @@
     <div class="timer">
         <p id="timeleft">30:00</p>
         <div class="buttonDiv">
-            <button class="startButton" id = "startButton" onclick="startButtonClick()">Start Timer</button>
+            <button class="startButton" id = "startButton" onclick="startButtonClick()">Start</button>
         </div>
 
     </div>

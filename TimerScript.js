@@ -43,16 +43,16 @@ function startButtonClick() {
     timerStart = !timerStart;
 
     if(!timerStart){
-        document.getElementById("startButton").innerHTML = "Start timer";
+        document.getElementById("startButton").innerHTML = "Start";
     }
     else{
-        document.getElementById("startButton").innerHTML = "Stop timer"; //change the button
+        document.getElementById("startButton").innerHTML = "Stop"; //change the button
     }
 
     if (timerStart) {
 
         if (workTime&&timerRunning){
-            time = 1800000; //default time of 30:00
+            time = 3000; //default time of 30:00
             document.getElementById("timeleft").innerHTML = hhmmss(time); //Set the timer to display 30:00 not 1800000
             document.getElementById("timerHeader").innerHTML="Time to work!";
         }
@@ -69,13 +69,13 @@ function startButtonClick() {
                 //startButtonDOM.className+=" active";
 
                 timerRunning=false;
-                document.getElementById("startButton").innerHTML = "Stop timer"; //change the button
+                document.getElementById("startButton").innerHTML = "Stop"; //change the button
                 time = time - 100;
                 document.getElementById("timeleft").innerHTML = hhmmss(time);
 
                 if (!timerStart) //If we should stop the timer
                 {
-                    document.getElementById("startButton").innerHTML = "Start timer";
+                    document.getElementById("startButton").innerHTML = "Start";
                     //startButtonDOM.className.replace(" active", "");
                     clearInterval(timerRepeatId); //stop the interval
 
@@ -86,7 +86,7 @@ function startButtonClick() {
                     timerStart=false;
                     timerRunning=true;
                     clearInterval(timerRepeatId);
-                    document.getElementById("startButton").innerHTML = "End Timer";
+                    document.getElementById("startButton").innerHTML = "End";
                     document.getElementById("timerHeader").innerHTML="Time's up!";
 					alarm.play();
                 }

@@ -1,7 +1,6 @@
 /*div holding the timer*/
 .timer {
     border-radius: 30px;
-    fill: darkgrey;
     margin: auto;
     width: 50%;
     padding-top: 0.2%;
@@ -9,12 +8,14 @@
 }
 /*the timer*/
 #timeleft {
-    font-size: 5em;
+    font-size: 7em;
     text-align: center;
     color: white;
+    margin: 10%;
 }
 /*button to start and stop the timer*/
 .startButton {
+    width: 20%;
     position: relative;
     font-size: 2em;
     text-align: center;

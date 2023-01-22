@@ -95,5 +95,40 @@ function addSchedule() {
 }
 function deleteSchedule(event) {
     let task = event.currentTarget;
+    let str = task.innerHTML;
+    let time = str.substring(str.length-13, str.length-11) + str.substring(str.length-10, str.length-8);
+    let day = task.parentElement.parentElement.id;
+    console.log(time);
+    console.log(day);
+    switch (day) {
+        case "sunday":
+            sundayArr.splice(binarySearch(sundayArr, time), 1);
+            console.log(sundayArr);
+            break;
+        case "monday":
+            mondayArr.splice(binarySearch(mondayArr, time), 1);
+            console.log(mondayArr);
+            break;
+        case "tuesday":
+            tuesdayArr.splice(binarySearch(tuesdayArr, time), 1);
+            console.log(tuesdayArr);
+            break;
+        case "wednesday":
+            wednesdayArr.splice(binarySearch(wednesdayArr, time), 1);
+            console.log(wednesdayArr);
+            break;
+        case "thursday":
+            thursdayArr.splice(binarySearch(thursdayArr, time), 1);
+            console.log(thursdayArr);
+            break;
+        case "friday":
+            fridayArr.splice(binarySearch(fridayArr, time), 1);
+            console.log(fridayArr);
+            break;
+        case "saturday":
+            saturdayArr.splice(binarySearch(saturdayArr, time), 1);
+            console.log(saturdayArr);
+            break;
+    }
     task.remove();
 }
