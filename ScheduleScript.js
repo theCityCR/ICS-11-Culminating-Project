@@ -8,6 +8,13 @@ let thursdayArr = [];
 let fridayArr = [];
 let saturdayArr = [];
 
+/**
+ * Finds the position to insert using binary search
+ * Assumes that the input array is sorted to begin with
+ * @param arr - The array to search from
+ * @param x - The value to insert into the array
+ * @returns {number} The position to insert the element into the array
+ */
 function binarySearch(arr, x) { //Binary search function, finds the index of an element
     let start=0, end=arr.length-1;
     while (start<=end){
@@ -20,6 +27,10 @@ function binarySearch(arr, x) { //Binary search function, finds the index of an 
     }
     return -start-1; //returns this if the element was not found in the array
 }
+
+/**
+ * Adds the inputted schedule to the table
+ */
 function addSchedule() {
     let day = document.getElementById("daySelect").value; //Takes the day from selection
     let start = document.getElementById("timeInput").value; //Takes the start time
@@ -91,6 +102,11 @@ function addSchedule() {
         newData.addEventListener("click",deleteSchedule);
     }
 }
+
+/**
+ * Used to delete a schedule item from the schedule
+ * @param event - Where the user wants to delete the schedule
+ */
 function deleteSchedule(event) {
     let task = event.currentTarget;
     let str = task.innerHTML; //Takes the data inside the table data and turns it into a string
