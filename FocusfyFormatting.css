@@ -35,6 +35,7 @@ body {
     background-color: #ff999e;
 }
 
+/* Special properties for the home tab */
 .tablinksHome{
     display:table-cell;
     background-color: inherit;
@@ -68,18 +69,19 @@ body {
     border-top: none;
 }
 
-
+/* Change home display */
 #Home {
     display : block;
 }
 
-
+/* Add padding and alignment to tab header */
 .tabHeader {
     text-align: center;
     padding-top: 20px;
     color: white;
 }
 
+/* Properties for checklist */
 #checklistHome {
     overflow: auto;
     border: none;
@@ -104,17 +106,19 @@ body {
 
 }
 
-
+/* Font */
 * {
     font-family: "Josefin Sans", sans-serif;
 }
 
+/* Alignment and padding to the date */
 #date {
     font-size: 1.7em;
     text-align: center;
     padding-bottom: 1%;
 }
 
+/* Top of the to-do list */
 #homeToDoListHeader {
     font-size: 1.3em;
     text-align: center;
