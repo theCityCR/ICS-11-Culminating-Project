@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 </head>
 <body>
-<!-- Tab links -->
+<!-- Tabs at the top -->
 <div class="tab">
     <button class="tablinksHome" id="defaultOpen" onclick="openTab(event, 'Home')"  >Focusfy</button>
     <button class="tablinks" onclick="openTab(event, 'Schedule')">Schedule</button>
@@ -14,11 +14,12 @@
     <button class="tablinks" onclick="openTab(event, 'Focus Timer')">Focus Timer</button>
 </div>
 
-<!-- Tab content -->
+<!-- Home tab -->
 <div id="Home" class="tabcontent">
     <div>
         <div style="width: 100%; display: inline-block">
             <p id="date">What's the date?</p>
+            <!-- To do list -->
             <div>
                 <p id="homeToDoListHeader">Your to-do list for today:</p>
                 <table id="checklistHome">
@@ -28,9 +29,11 @@
         </div>
     </div>
 </div>
+<!-- Schedule -->
 <div id="Schedule" class="tabcontent">
     <div class="scheduleIn">
         <span style="vertical-align: center">
+            <!-- Input -->
             <input id = "addSchedule" type="text" placeholder="Task Name">
             <label for="daySelect">Day:</label>
             <select id="daySelect">
@@ -47,9 +50,11 @@
             To
             <input id="timeInput2" type="time" name="time"/>
         </span>
+        <!-- Add button -->
         <img src="addTaskButton.png" alt="Add task" id = "addScheduleButton" onclick="addSchedule()">
     </div>
     <br>
+    <!-- Part to show schedule -->
     <div id="tableDiv">
         <table class="scheduleTable" id="sunday">
             <tr class="tableHeader">
@@ -110,22 +115,27 @@
     </div>
 </div>
 
+<!-- To-do list -->
 <div id="To-do List" class="tabcontent">
-
     <div class="checklistOutline">
         <h1 class="tabHeader">To-do List</h1>
+        <!-- Input -->
         <div id="input">
             <input id = "taskAdder" type="text" placeholder="Add tasks">
             <img src="addTaskButton.png" alt="Add task" id = "addTaskButton" onclick="addTask()" onmouseover="changeImg()" onmouseout="changeImg()">
         </div>
+        <!-- Actual list -->
         <table id="checklist">
         </table>
     </div>
 </div>
 
+<!-- Focus timer -->
 <div id="Focus Timer" class="tabcontent">
     <div class="timer">
+        <!-- Shows time left -->
         <p id="timeleft">30:00</p>
+        <!-- Buttons -->
         <div class="buttonDiv">
             <button class="startButton" id = "startButton" onclick="startButtonClick()">Start</button>
         </div>
@@ -134,6 +144,7 @@
     <h1 class = "tabHeader" id="timerHeader">Time to work!</h1>
 </div>
 
+<!-- Scripts and formatting -->
 <script type="text/javascript" src="FocusfyScript.js"></script>
 <link rel="stylesheet" href="FocusfyFormatting.css">
 <script type="text/javascript" src="ScheduleScript.js"></script>
